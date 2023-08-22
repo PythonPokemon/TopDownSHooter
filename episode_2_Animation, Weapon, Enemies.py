@@ -20,10 +20,11 @@ class Player:#----objekt Player Parameter
     def main(self, display): #---Player auf dem bilschirm zeichnen mit entsprechenden Parametern
         if self.animation_count + 1 >= 16:
             self.animation_count = 0 #---wenn 0.png >= 16 erreicht ist, wird es zurückgesetzt auf 0
+            
         self.animation_count += 1#--animationszähler
 
-        display.blit(player_walk_images[self.animation_count], (self.x, self.y))
-        pygame.draw.rect(display, (255, 0, 0), (self.x, self.y, self.width, self.height))#----farbe
+        display.blit(player_walk_images[self.animation_count//4], (self.x, self.y))
+        #pygame.draw.rect(display, (255, 0, 0), (self.x, self.y, self.width, self.height))#----farbe
 
 class PlayerBullet: #----objekt Kugeln Parameter
     def __init__(self, x, y, mouse_x, mouse_y,):
