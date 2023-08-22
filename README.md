@@ -1,14 +1,12 @@
 # TopDownSHooter To-Do
 
-momster Slims implementieren
-angriffe eventuel animieren.
-monster per zufall auf der karte platzieren
-punkte erstellen
-dmg anzeigen lassen
-monster lebenspunkt zuweisen
-monster atk und vert. zuweisen
-level erstellen
-etappen level erstellen
-skill tree erstellen mit skills
-effekte buff
-effekte debuff erstellen
+Das spiel soll für zukünftige entwickler den einstieg ins Game Development erleichtern 
+
+deswegen kann das spiel gerne kopiert und erweitert werden 
+
+ich freue mich über jede erweiterung und werde die to do list auch auf dem laufenden halten, 
+wenn teile der todo liste abgearbeitet werden.
+
+ps.
+schöne grüße 
+Python Pokemon
