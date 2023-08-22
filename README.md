@@ -10,3 +10,5 @@ monster atk und vert. zuweisen
 level erstellen
 etappen level erstellen
 skill tree erstellen mit skills
+effekte buff
+effekte debuff erstellen
