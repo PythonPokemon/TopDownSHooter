@@ -7,13 +7,22 @@ pygame.init()#---initialisiert das spiel
 display = pygame.display.set_mode((800, 600))#------------------Display größe-------------------
 clock = pygame.time.Clock()#---fps?
 
+player_walk_images = [pygame.image.load("player_walk_0.png"), pygame.image.load("player_walk_1.png"),
+pygame.image.load("player_walk_2.png"), pygame.image.load("player_walk_3.png")]
+
 class Player:#----objekt Player Parameter
     def __init__(self, x, y, width, height):
         self.x = x
         self.y = y
         self.width = width
         self.height = height
+        self.animation_count = 0 #--- zählt das animationsframe 0.png - 3.png also maximale anzhal
     def main(self, display): #---Player auf dem bilschirm zeichnen mit entsprechenden Parametern
+        if self.animation_count + 1 >= 16:
+            self.animation_count = 0 #---wenn 0.png >= 16 erreicht ist, wird es zurückgesetzt auf 0
+        self.animation_count += 1#--animationszähler
+
+        display.blit(player_walk_images[self.animation_count], (self.x, self.y))
         pygame.draw.rect(display, (255, 0, 0), (self.x, self.y, self.width, self.height))#----farbe
 
 class PlayerBullet: #----objekt Kugeln Parameter
