@@ -4,8 +4,7 @@ Das spiel soll für zukünftige entwickler den einstieg ins Game Development erl
 
 deswegen kann das spiel gerne kopiert und erweitert werden 
 
-ich freue mich über jede erweiterung und werde die to do list auch auf dem laufenden halten, 
-wenn teile der todo liste abgearbeitet werden.
+ich freue mich über jede erweiterung:-)
 
 Ideen zu DLC's gerne hier rein [.....]
 ps.
